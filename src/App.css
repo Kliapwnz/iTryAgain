@@ -20,8 +20,10 @@
 
 .nav {
     grid-area: n;
+    background-color: darkgrey;
 }
 
 .content {
     grid-area: c;
+    background-color: darkgrey;
 }
