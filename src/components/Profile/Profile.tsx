@@ -13,9 +13,9 @@ export const Profile = () => {
             </div>
             <div>
                 My Posts
-                <div>Post1</div>
-                <div>Post2</div>
-                <div>Post3</div>
+                <div className={s.item}>Post1</div>
+                <div className={s.item}>Post2</div>
+                <div className={s.item}>Post3</div>
             </div>
         </div>
     );
