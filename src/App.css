@@ -11,14 +11,7 @@
 
 }
 
-.header {
-    grid-area: h;
-    background-color: darkslategray;
-}
 
-.header img {
-    width: 60px;
-}
 
 .nav {
     grid-area: n;
