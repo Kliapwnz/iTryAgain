@@ -4,16 +4,16 @@ import s from "./Navbar.module.css"
 export const Navbar = () => {
     return (
         <div className={s.nav}>
-            <div>
+            <div className={s.item}>
                 <a href="src/components/Navbar/Navbar#s">Profile</a>
             </div>
-            <div>
+            <div className={s.item}>
                 <a href="src/components/Navbar/Navbar#s">Messages</a>
             </div>
-            <div>
+            <div className={s.item}>
                 <a href="src/components/Navbar/Navbar#s">News</a>
             </div>
-            <div>
+            <div className={s.item}>
                 <a href="src/components/Navbar/Navbar#s">Music</a>
             </div>
         </div>
