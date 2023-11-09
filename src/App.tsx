@@ -8,15 +8,9 @@ import {Content} from "./components/Content";
 function App() {
     return (
         <div className="app-wrapper">
-            <div className="header">
-                <Header/>
-            </div>
-            <nav className="nav">
-                <Navbar/>
-            </nav>
-            <div className="content">
-                <Content/>
-            </div>
+            <Header/>
+            <Navbar/>
+            <Content/>
         </div>
     );
 }

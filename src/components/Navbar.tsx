@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Navbar = () => {
     return (
-        <div>
+        <div className="nav">
             <div>
                 <a href="#s">Profile</a>
             </div>
