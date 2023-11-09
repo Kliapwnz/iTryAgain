@@ -10,9 +10,10 @@ function App() {
                 <Header/>
             </div>
             <nav className="nav">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+                <div><a>Profile</a></div>
+                <div><a>Messages</a></div>
+                <div><a>News</a></div>
+                <div><a>Music</a></div>
             </nav>
             <div className="content">Content</div>
         </div>
