@@ -5,16 +5,16 @@ export const Navbar = () => {
     return (
         <div className={s.nav}>
             <div className={`${s.item} ${s.active}`}>
-                <a href="src/components/Navbar/Navbar#s">Profile</a>
+                <a>Profile</a>
             </div>
             <div className={s.item}>
-                <a href="src/components/Navbar/Navbar#s">Messages</a>
+                <a>Messages</a>
             </div>
             <div className={s.item}>
-                <a href="src/components/Navbar/Navbar#s">News</a>
+                <a>News</a>
             </div>
             <div className={s.item}>
-                <a href="src/components/Navbar/Navbar#s">Music</a>
+                <a>Music</a>
             </div>
         </div>
     );
