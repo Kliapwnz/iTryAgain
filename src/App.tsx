@@ -23,7 +23,10 @@ function App() {
                     <a href="#s">Music</a>
                 </div>
             </nav>
-            <div className="content">Content</div>
+            <div className="content">
+                <img src="https://static.vecteezy.com/system/resources/previews/008/972/370/non_2x/logo-for-a-hacker-anonymous-anonymous-esport-logo-for-community-team-esport-squad-and-team-free-vector.jpg"/>
+                Content
+            </div>
         </div>
     );
 }
