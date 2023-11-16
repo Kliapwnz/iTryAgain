@@ -11,9 +11,9 @@ export const MyPosts = () => {
                     <textarea></textarea>
                     <button>Add post</button>
                 </div>
-                <Post/>
-                <Post/>
-                <Post/>
+                <Post title="Hello"/>
+                <Post title="My Second post"/>
+                <Post title="It try to learn React"/>
             </div>
         </div>
     );
