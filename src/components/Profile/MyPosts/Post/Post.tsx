@@ -3,6 +3,7 @@ import s from "./Post.module.css"
 
 type PropsType={
     title:string
+    likesCont:number
 }
 
 export const Post = (props:PropsType) => {
@@ -12,7 +13,7 @@ export const Post = (props:PropsType) => {
                 src="https://static.vecteezy.com/system/resources/previews/014/487/751/non_2x/pictogram-hacker-logo-of-cybersecurity-man-working-on-a-computer-security-icon-vector.jpg"/>
             {props.title}
             <div>
-                <span>like</span>
+                <span>{props.likesCont} likes</span>
             </div>
         </div>
     );
