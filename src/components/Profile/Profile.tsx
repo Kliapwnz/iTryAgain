@@ -5,7 +5,7 @@ import {ProfileInfo} from "./ProfileInfo/ProfileInfo";
 
 export const Profile = () => {
     return (
-        <div className={s.content}>
+        <div>
             <ProfileInfo/>
             <MyPosts/>
         </div>
