@@ -12,7 +12,7 @@ export const Navbar = () => {
                 <NavLink to="/dialogs">Messages</NavLink>
             </div>
             <div className={s.item}>
-                <a>News</a>
+                <NavLink to="/news">News</NavLink>
             </div>
             <div className={s.item}>
                 <a>Music</a>
