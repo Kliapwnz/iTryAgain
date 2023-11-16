@@ -3,7 +3,10 @@
     grid-area: c;
     background-color: darkgrey;
 }
-
+.content img {
+    width: 600px;
+    height: 400px;
+}
 .item {
     color: black;
 }
