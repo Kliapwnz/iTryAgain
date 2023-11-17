@@ -15,15 +15,19 @@ export const Dialogs = () => {
         {id: 6, name: "Natali"},
     ]
 
+    let messagesData = [
+        {id: 1, message:"Hello"},
+        {id: 2, message:"How are you?"},
+        {id: 3, message:"How is your IT?"},
+        {id: 4, message:"I Try to learn React and JS"},
+        {id: 5, message:"Also my favourite football team MC"},
+    ]
+
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                <DialogItem name="Anastasiya" id="1"/>
-                <DialogItem name="Yuri" id="2"/>
-                <DialogItem name="Elena" id="3"/>
-                <DialogItem name="Kristina" id="4"/>
-                <DialogItem name="Evgeniy" id="5"/>
-                <DialogItem name="Natali" id="6"/>
+                {dialogsData.map(el => el.id)}
+
 
             </div>
             <div className={s.messages}>
