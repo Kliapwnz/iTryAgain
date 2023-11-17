@@ -4,7 +4,6 @@ import {DialogItem} from "./DialogItem/DialogItem";
 import {Message} from "./Message/Message";
 
 
-
 export const Dialogs = () => {
 
     let dialogsData = [
