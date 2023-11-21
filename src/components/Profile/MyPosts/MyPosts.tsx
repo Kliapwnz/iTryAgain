@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {Post} from "./Post/Post";
 import s from "./MyPosts.module.css"
 import {PostType} from "../../../redux/state";
@@ -9,6 +9,8 @@ type MyPostsType = {
 }
 
 export const MyPosts: React.FC<MyPostsType> = (props) => {
+    let newPostElement = useRef<HTMLTextAreaElement>(null);
+
     const addPost = () => {
 
     }
@@ -19,7 +21,7 @@ export const MyPosts: React.FC<MyPostsType> = (props) => {
             <h3>My Posts</h3>
             <div>
                 <div>
-                    <textarea></textarea>
+                    <textarea ref={newPostElement}></textarea>
                 </div>
                 <div>
                     <button onClick={addPost}>Add post</button>
