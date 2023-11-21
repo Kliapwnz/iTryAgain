@@ -5,9 +5,13 @@ import {PostType} from "../../../redux/state";
 
 type MyPostsType = {
     posts: PostType[]
+
 }
 
 export const MyPosts: React.FC<MyPostsType> = (props) => {
+    const addPost = () => {
+
+    }
 
     let postsElement = props.posts.map(el => <Post message={el.message} likesCont={el.likesCount}/>)
     return (
@@ -18,7 +22,7 @@ export const MyPosts: React.FC<MyPostsType> = (props) => {
                     <textarea></textarea>
                 </div>
                 <div>
-                    <button>Add post</button>
+                    <button onClick={addPost}>Add post</button>
                 </div>
             </div>
             <div className={s.posts}>
