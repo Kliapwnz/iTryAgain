@@ -13,6 +13,7 @@ import {addPost, RootStateType} from "./redux/state";
 
 type PropsType = {
     state: RootStateType
+    addPost: (postMessage: string) => void
 }
 
 
@@ -27,6 +28,7 @@ export const App: React.FC<PropsType> = (props) => {
                         <Route path="/profile/*" element={
                             <Profile
                                 profile={props.state.profilePage}
+                                addPost={props.addPost}
                             />}
                         />
                         <Route path="/dialogs/*" element={<Dialogs state={props.state.dialogsPage}/>}/>
