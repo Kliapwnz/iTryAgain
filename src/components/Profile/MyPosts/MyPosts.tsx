@@ -1,19 +1,22 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import {Post} from "./Post/Post";
 import s from "./MyPosts.module.css"
 import {PostType} from "../../../redux/state";
 
 type MyPostsType = {
     posts: PostType[]
-}
-type AddPostType = {
     addPost: (postMessage: string) => void
 }
+
 export const MyPosts: React.FC<MyPostsType> = (props) => {
     let newPostElement = React.createRef<HTMLTextAreaElement>();
 
-    const addPost = (e:HTMLTextAreaElement) => {
-        props.addPost
+    const addPost = () => {
+        let text = newPostElement.current?.value
+        if (text) {
+            return props.addPost(text)
+        }
+
     }
 
     let postsElement = props.posts.map(el => <Post message={el.message} likesCont={el.likesCount}/>)
