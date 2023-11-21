@@ -12,7 +12,7 @@ export const MyPosts: React.FC<MyPostsType> = (props) => {
     let newPostElement = useRef<HTMLTextAreaElement>(null);
 
     const addPost = () => {
-
+        alert(newPostElement.current?.value)
     }
 
     let postsElement = props.posts.map(el => <Post message={el.message} likesCont={el.likesCount}/>)
