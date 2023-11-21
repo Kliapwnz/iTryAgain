@@ -9,7 +9,7 @@ type MyPostsType = {
 }
 
 export const MyPosts: React.FC<MyPostsType> = (props) => {
-    let newPostElement = useRef<HTMLTextAreaElement>(null);
+    let newPostElement = React.createRef<HTMLTextAreaElement>();
 
     const addPost = () => {
         alert(newPostElement.current?.value)

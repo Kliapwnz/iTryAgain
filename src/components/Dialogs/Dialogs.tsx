@@ -15,7 +15,7 @@ export const Dialogs: React.FC<DialogsType> = (props) => {
 
 
     let messagesElements = props.state.messages.map(el => <Message message={el.message}/>)
-    let newMessageElement = useRef<HTMLTextAreaElement>(null);
+    let newMessageElement = React.createRef<HTMLTextAreaElement>();
     let AddMessage = () => {
         alert(newMessageElement.current?.value)
     }
