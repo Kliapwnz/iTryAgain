@@ -8,12 +8,13 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {News} from "./components/News/News";
 import {Music} from "./components/Music/Music";
 import {Settings} from "./components/Settings/Settings";
-import {addPost, RootStateType} from "./redux/state";
+import {RootStateType} from "./redux/state";
 
 
 type PropsType = {
     state: RootStateType
     addPost: (postMessage: string) => void
+    addMessage: (messageText: string) => void
 }
 
 
@@ -31,7 +32,10 @@ export const App: React.FC<PropsType> = (props) => {
                                 addPost={props.addPost}
                             />}
                         />
-                        <Route path="/dialogs/*" element={<Dialogs state={props.state.dialogsPage}/>}/>
+                        <Route path="/dialogs/*" element={<Dialogs
+                            state={props.state.dialogsPage}
+                            addMessage={props.addMessage}
+                        />}/>
                         <Route path="/news/*" element={<News/>}/>
                         <Route path="/music/*" element={<Music/>}/>
                         <Route path="/settings/*" element={<Settings/>}/>

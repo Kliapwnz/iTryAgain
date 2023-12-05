@@ -66,3 +66,11 @@ export let addPost = (postMessage: string) => {
     state.profilePage.posts.push(newPost)
     rerenderEntireTree()
 }
+
+export let addMessage =(messageText:string)=>{
+    let newMessage = {
+        id:6,
+        message: messageText
+    }
+    state.dialogsPage.messages.push(newMessage)
+}
