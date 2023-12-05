@@ -73,4 +73,5 @@ export let addMessage =(messageText:string)=>{
         message: messageText
     }
     state.dialogsPage.messages.push(newMessage)
+    rerenderEntireTree()
 }
