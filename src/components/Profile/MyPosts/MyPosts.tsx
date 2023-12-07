@@ -15,6 +15,7 @@ export const MyPosts: React.FC<MyPostsType> = (props) => {
 
     const addPost = () => {
         props.addPost(props.newPostText)
+        props.changePostText("")
     }
     const onPostChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
         props.changePostText(e.currentTarget.value)
