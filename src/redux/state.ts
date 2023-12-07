@@ -66,7 +66,7 @@ export let addPost = (postMessage: string) => {
         likesCount: 0
     }
     state.profilePage.posts.push(newPost)
-    rerenderEntireTree()
+    rerenderEntireTree(state)
 }
 
 export let addMessage =(messageText:string)=>{
@@ -75,5 +75,5 @@ export let addMessage =(messageText:string)=>{
         message: messageText
     }
     state.dialogsPage.messages.push(newMessage)
-    rerenderEntireTree()
+    rerenderEntireTree(state)
 }
