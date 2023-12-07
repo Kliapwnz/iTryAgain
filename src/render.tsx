@@ -6,7 +6,7 @@ import ReactDOM from "react-dom/client";
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
-export const rerenderEntireTree = (state:RootStateType) => {
+export const rerenderEntireTree = (state: RootStateType) => {
     root.render(
         <React.StrictMode>
             <App state={state} addPost={addPost} addMessage={addMessage} changePostText={changePostText}/>

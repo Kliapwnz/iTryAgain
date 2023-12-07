@@ -15,7 +15,7 @@ type PropsType = {
     state: RootStateType
     addPost: (postMessage: string) => void
     addMessage: (messageText: string) => void
-    changePostText:(newText:string)=>void
+    changePostText: (newText: string) => void
 }
 
 
