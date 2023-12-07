@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
 import {Post} from "./Post/Post";
 import s from "./MyPosts.module.css"
 import {PostType} from "../../../redux/state";
@@ -16,8 +16,8 @@ export const MyPosts: React.FC<MyPostsType> = (props) => {
     const addPost = () => {
         props.addPost(props.newPostText)
     }
-    const onPostChange = () => {
-        props.changePostText
+    const onPostChange = (e:ChangeEvent<HTMLTextAreaElement>) => {
+        props.changePostText(e.currentTarget.value)
     }
 
     let postsElement = props.posts.map(el => <Post message={el.message} likesCont={el.likesCount}/>)
