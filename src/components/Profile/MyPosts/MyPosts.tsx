@@ -6,21 +6,18 @@ import {PostType} from "../../../redux/state";
 type MyPostsType = {
     posts: PostType[]
     addPost: (postMessage: string) => void
-    newPostText:string
+    changePostText: (newText: string) => void
+    newPostText: string
 }
 
 export const MyPosts: React.FC<MyPostsType> = (props) => {
-    let newPostElement = React.createRef<HTMLTextAreaElement>();
+
 
     const addPost = () => {
-        if (newPostElement.current) {
-            props.addPost(newPostElement.current?.value)
-            newPostElement.current.value = ""
-        }
-
+        props.addPost(props.newPostText)
     }
-    let onPostChange = () =>{
-
+    const onPostChange = () => {
+        props.changePostText
     }
 
     let postsElement = props.posts.map(el => <Post message={el.message} likesCont={el.likesCount}/>)
@@ -30,7 +27,6 @@ export const MyPosts: React.FC<MyPostsType> = (props) => {
             <div>
                 <div>
                     <textarea
-                        ref={newPostElement}
                         onChange={onPostChange}
                         value={props.newPostText}
                     />

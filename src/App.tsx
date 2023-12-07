@@ -15,6 +15,7 @@ type PropsType = {
     state: RootStateType
     addPost: (postMessage: string) => void
     addMessage: (messageText: string) => void
+    changePostText:(newText:string)=>void
 }
 
 
@@ -30,6 +31,7 @@ export const App: React.FC<PropsType> = (props) => {
                             <Profile
                                 profile={props.state.profilePage}
                                 addPost={props.addPost}
+                                changePostText={props.changePostText}
                             />}
                         />
                         <Route path="/dialogs/*" element={<Dialogs
