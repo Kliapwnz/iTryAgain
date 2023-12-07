@@ -12,7 +12,9 @@ export const Profile:React.FC<ProfileType> = (props) => {
     return (
         <div>
             <ProfileInfo/>
-            <MyPosts posts={props.profile.posts} addPost={props.addPost} />
+            <MyPosts posts={props.profile.posts}
+                     newPostText={props.profile.newPostText}
+                     addPost={props.addPost} />
         </div>
     );
 };
