@@ -38,7 +38,7 @@ export let state: RootStateType = {
             {id: 1, message: "It try to learn React", likesCount: 24},
             {id: 1, message: "I can`t stop it!", likesCount: 88},
         ],
-        newPostText:"it-kamasutra.com"
+        newPostText:""
     },
     dialogsPage: {
         dialogs: [
